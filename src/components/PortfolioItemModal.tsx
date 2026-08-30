@@ -1026,10 +1026,11 @@ export const PortfolioItemModal: React.FC<PortfolioItemModalProps> = ({ item, on
                           referrerPolicy="no-referrer"
                           onError={(e) => {
                             const target = e.currentTarget;
-                            if (target.src.endsWith('.JPG')) {
-                              target.src = target.src.replace('.JPG', '.jpg');
-                            } else if (target.src.endsWith('.jpg')) {
-                              target.src = target.src.replace('.jpg', '.JPG');
+                            if (!target.dataset.retriedCase && (target.src.endsWith('.JPG') || target.src.endsWith('.jpg'))) {
+                              target.dataset.retriedCase = 'true';
+                              target.src = target.src.endsWith('.JPG')
+                                ? target.src.replace(/\.JPG$/, '.jpg')
+                                : target.src.replace(/\.jpg$/, '.JPG');
                             }
                           }}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -1557,10 +1558,11 @@ export const PortfolioItemModal: React.FC<PortfolioItemModalProps> = ({ item, on
                 alt={galleryPhotos[activeSlideIndex]?.title}
                 onError={(e) => {
                   const target = e.currentTarget;
-                  if (target.src.endsWith('.JPG')) {
-                    target.src = target.src.replace('.JPG', '.jpg');
-                  } else if (target.src.endsWith('.jpg')) {
-                    target.src = target.src.replace('.jpg', '.JPG');
+                  if (!target.dataset.retriedCase && (target.src.endsWith('.JPG') || target.src.endsWith('.jpg'))) {
+                    target.dataset.retriedCase = 'true';
+                    target.src = target.src.endsWith('.JPG')
+                      ? target.src.replace(/\.JPG$/, '.jpg')
+                      : target.src.replace(/\.jpg$/, '.JPG');
                   }
                 }}
                 className="w-full h-full object-contain"

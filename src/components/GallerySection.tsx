@@ -248,10 +248,11 @@ export const GallerySection: React.FC<GallerySectionProps> = () => {
                   referrerPolicy="no-referrer"
                   onError={(e) => {
                     const target = e.currentTarget;
-                    if (target.src.endsWith('.JPG')) {
-                      target.src = target.src.replace('.JPG', '.jpg');
-                    } else if (target.src.endsWith('.jpg')) {
-                      target.src = target.src.replace('.jpg', '.JPG');
+                    if (!target.dataset.retriedCase && (target.src.endsWith('.JPG') || target.src.endsWith('.jpg'))) {
+                      target.dataset.retriedCase = 'true';
+                      target.src = target.src.endsWith('.JPG')
+                        ? target.src.replace(/\.JPG$/, '.jpg')
+                        : target.src.replace(/\.jpg$/, '.JPG');
                     } else if (!target.dataset.failed) {
                       target.dataset.failed = 'true';
                       target.src = 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1000&q=80';

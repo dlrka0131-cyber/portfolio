@@ -154,8 +154,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                       alt="김정이 강사 프로필"
                       onError={(e) => {
                         const target = e.currentTarget;
-                        if (target.src.endsWith('/profile.jpg')) {
+                        if (!target.dataset.retriedPath && target.src.endsWith('/profile.jpg') && !target.src.endsWith('/images/profile.jpg')) {
+                          target.dataset.retriedPath = 'true';
                           target.src = '/images/profile.jpg';
+                        } else {
+                          setProfileImg(null);
                         }
                       }}
                       className="w-full h-full object-cover object-center filter brightness-95 contrast-105 group-hover:scale-102 transition-transform duration-500"
