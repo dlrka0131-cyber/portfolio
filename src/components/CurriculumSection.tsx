@@ -6,6 +6,7 @@ import { SessionThumbnail } from './SessionThumbnail';
 import { getItem, saveItem, removeItem, getItemWithFallback, saveSessionItem, removeSessionItem, getSessionAliases } from '../utils/storage';
 import { useAdmin } from '../context/AdminContext';
 import { WebIcon } from './WebIcon';
+import { useCloseOnBackButton } from '../hooks/useCloseOnBackButton';
 
 interface CurriculumSectionProps {
   onOpenTrialModal: () => void;
@@ -60,6 +61,10 @@ export const CurriculumSection: React.FC<CurriculumSectionProps> = ({ onOpenTria
   const [curriculumImages, setCurriculumImages] = useState<Record<string, string>>({});
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   const { isAdmin } = useAdmin();
+
+  useCloseOnBackButton(!!activeStepModal, () => setActiveStepModal(null));
+  useCloseOnBackButton(!!activeSessionModal, () => setActiveSessionModal(null));
+  useCloseOnBackButton(!!lightboxImage, () => setLightboxImage(null));
 
   useEffect(() => {
     let cancelled = false;

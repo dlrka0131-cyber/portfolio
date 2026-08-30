@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Sparkles, GraduationCap, Camera, HeartHandshake, Phone, Menu, X, Youtube, Mail, Lock, LockKeyholeOpen } from 'lucide-react';
 import { useAdmin } from '../context/AdminContext';
+import { useCloseOnBackButton } from '../hooks/useCloseOnBackButton';
 
 interface HeaderProps {
   onOpenTrialModal: () => void;
@@ -11,6 +12,7 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ onOpenTrialModal, activeSection, setActiveSection }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { isAdmin, toggleAdminMode } = useAdmin();
+  useCloseOnBackButton(mobileMenuOpen, () => setMobileMenuOpen(false));
 
   const navItems = [
     { id: 'hero', label: '강사 소개', icon: Sparkles },

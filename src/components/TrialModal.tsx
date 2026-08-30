@@ -3,6 +3,7 @@ import confetti from 'canvas-confetti';
 import { Sparkles, Calendar, Clock, User, Phone, BookOpen, CheckCircle, X, Mail, ListFilter, Trash2, MessageSquare } from 'lucide-react';
 import { saveItem, getItem } from '../utils/storage';
 import { useAdmin } from '../context/AdminContext';
+import { useCloseOnBackButton } from '../hooks/useCloseOnBackButton';
 
 interface TrialModalProps {
   isOpen: boolean;
@@ -21,6 +22,7 @@ export interface InquiryItem {
 
 export const TrialModal: React.FC<TrialModalProps> = ({ isOpen, onClose }) => {
   const { isAdmin } = useAdmin();
+  useCloseOnBackButton(isOpen, onClose);
   const [formData, setFormData] = useState({
     parentName: '',
     phone: '',

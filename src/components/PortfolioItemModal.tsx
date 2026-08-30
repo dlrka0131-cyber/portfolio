@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useCloseOnBackButton } from '../hooks/useCloseOnBackButton';
 import {
   X,
   FileText,
@@ -123,6 +124,7 @@ const FALLBACK_GALLERY_PHOTOS = [
 
 export const PortfolioItemModal: React.FC<PortfolioItemModalProps> = ({ item, onClose, onOpenInquiry, onSelectItem }) => {
   const modalContentRef = useRef<HTMLDivElement>(null);
+  useCloseOnBackButton(!!item, onClose);
 
   // Calculate Next Item for direct curriculum navigation
   const allPortfolioItems = React.useMemo(() => PORTFOLIO_CATEGORIES.flatMap((cat) => cat.items), []);

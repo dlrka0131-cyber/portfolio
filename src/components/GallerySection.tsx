@@ -5,6 +5,7 @@ import { Camera, Eye, X, PlusCircle, Trash2 } from 'lucide-react';
 import { compressImage } from '../utils/imageCompressor';
 import { getItem, saveItem } from '../utils/storage';
 import { useAdmin } from '../context/AdminContext';
+import { useCloseOnBackButton } from '../hooks/useCloseOnBackButton';
 
 interface GallerySectionProps {
   onOpenTrialModal: () => void;
@@ -18,6 +19,7 @@ export const GallerySection: React.FC<GallerySectionProps> = () => {
   const [addedPhotos, setAddedPhotos] = useState<ActivityPhoto[]>([]);
 
   const { isAdmin } = useAdmin();
+  useCloseOnBackButton(!!selectedPhoto, () => setSelectedPhoto(null));
 
   useEffect(() => {
     if (selectedPhoto) {
