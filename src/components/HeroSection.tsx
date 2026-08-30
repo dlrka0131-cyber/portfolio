@@ -32,7 +32,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       }
 
       // Default to static public image if present
-      setProfileImg('/profile.jpg');
+      setProfileImg('profile.jpg');
     };
     loadProfileImg();
   }, []);
@@ -154,9 +154,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                       alt="김정이 강사 프로필"
                       onError={(e) => {
                         const target = e.currentTarget;
-                        if (!target.dataset.retriedPath && target.src.endsWith('/profile.jpg') && !target.src.endsWith('/images/profile.jpg')) {
+                        if (!target.dataset.retriedPath && target.src.endsWith('profile.jpg') && !target.src.endsWith('images/profile.jpg')) {
                           target.dataset.retriedPath = 'true';
-                          target.src = '/images/profile.jpg';
+                          target.src = 'images/profile.jpg';
                         } else {
                           setProfileImg(null);
                         }

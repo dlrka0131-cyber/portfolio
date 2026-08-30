@@ -40,8 +40,8 @@ export const SessionThumbnail: React.FC<SessionThumbnailProps> = ({
   }
 
   // Priority 2: Static images if they exist
-  const staticPath1 = `/images/1학년 ${sessionNumber}차시.png`;
-  const staticPath2 = `/images/grade1_${sessionNumber}.png`;
+  const staticPath1 = `images/1학년 ${sessionNumber}차시.png`;
+  const staticPath2 = `images/grade1_${sessionNumber}.png`;
 
   let staticSrc: string | null = null;
   if (staticErrorCount === 0) {

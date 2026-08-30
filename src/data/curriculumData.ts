@@ -146,35 +146,35 @@ export const CURRICULUM_DATA: GradeCurriculum[] = [
             title: '01차시 - 헬로메이플 로그인 & 아바타 꾸미기',
             concept: '나만의 아바타 만들기',
             description: '헬로메이플 로그인 및 접속 방법부터 캐릭터 헤어, 의상, 악세서리를 자유롭게 조합하여 나만의 독창적인 메이플 부캐릭터를 꾸밉니다.',
-            defaultImage: '/images/hellomaple_1.svg'
+            defaultImage: 'images/hellomaple_1.svg'
           },
           {
             sessionNumber: 2,
             title: '02차시 - 화면구성 & 맵꾸미기',
             concept: '내 맘대로 만드는 메이플 월드',
             description: '에디터 화면 구조를 익히고 지형 타일, 건물, 나무, 장애물을 배치하여 나만의 아름다운 2D 메이플 월드를 디자인합니다.',
-            defaultImage: '/images/hellomaple_2.svg'
+            defaultImage: 'images/hellomaple_2.svg'
           },
           {
             sessionNumber: 3,
             title: '03차시 - 오브젝트 상호작용 익히기',
             concept: '아바타와 음식의 상호작용 구현하기',
             description: '아바타가 맵 안의 음식 오브젝트와 부딪치거나 획득했을 때 효과음이 나고 점수가 오르는 인터랙티브 상호작용 로직을 코딩합니다.',
-            defaultImage: '/images/hellomaple_3.svg'
+            defaultImage: 'images/hellomaple_3.svg'
           },
           {
             sessionNumber: 4,
             title: '04차시 - 공간 이동 포털 마법 배우기',
             concept: '\'신호 보내기\'를 활용한 위치 이동 로직 구현하기',
             description: '신호 보내기 블록을 활용하여 특정 포털 공간에 들어갔을 때 원하는 목적지나 다음 위치로 순간 이동하는 워프 포털 시스템을 만듭니다.',
-            defaultImage: '/images/hellomaple_4.svg'
+            defaultImage: 'images/hellomaple_4.svg'
           },
           {
             sessionNumber: 5,
             title: '05차시 - 새로운 월드로 떠나는 장면 전환 코딩',
             concept: '장면(Map) 추가 및 구성하기',
             description: '여러 개의 맵(장면)을 새로 추가하고 스테이지 전환 조건 및 월드 이동 로직을 구성하여 멀티 스테이지 메타버스 프로젝트를 최종 완성합니다.',
-            defaultImage: '/images/hellomaple_5.svg'
+            defaultImage: 'images/hellomaple_5.svg'
           }
         ]
       }

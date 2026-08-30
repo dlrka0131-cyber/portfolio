@@ -203,10 +203,10 @@ export const CurriculumSection: React.FC<CurriculumSectionProps> = ({ onOpenTria
   const nextCurriculumData = currentCurriculumIndex !== -1 ? CURRICULUM_DATA[(currentCurriculumIndex + 1) % CURRICULUM_DATA.length] : null;
   const activeImageKey = activeCurriculum.curriculumImageKey;
   const getDefaultGradeImg = (id: string) => {
-    if (id === 'hello-maple') return '/images/hellomaple_1.svg';
-    if (id === 'solbit-1' || id === 'solbit-2') return '/grade12.jpg';
-    if (id === 'elementary-low' || id === 'elementary-high' || id.includes('34')) return '/grade34.jpg';
-    if (id === 'middle' || id === 'high' || id.includes('56')) return '/grade56.jpg';
+    if (id === 'hello-maple') return 'images/hellomaple_1.svg';
+    if (id === 'solbit-1' || id === 'solbit-2') return 'grade12.jpg';
+    if (id === 'elementary-low' || id === 'elementary-high' || id.includes('34')) return 'grade34.jpg';
+    if (id === 'middle' || id === 'high' || id.includes('56')) return 'grade56.jpg';
     return null;
   };
   const currentImage = (activeImageKey ? curriculumImages[activeImageKey] : null) || getDefaultGradeImg(activeCurriculum.id);

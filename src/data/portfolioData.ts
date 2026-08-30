@@ -19,7 +19,7 @@ export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
         schoolLocation: '솔빛초, 청계초 등 출강',
         detailDescription: '마우스 조작부터 애니메이션, 좌표 점프, 조건문, 복제본 활용 오락실 게임까지 8차시에 걸쳐 재미있는 프로젝트로 코딩 기본기를 세웁니다.',
         tags: ['엔트리기초', '8차시완성', '블록코딩', '저학년맞춤'],
-        imageUrl: '/images/entry-basic.jpg',
+        imageUrl: 'images/entry-basic.jpg',
         lessonOutline: [
           { lessonNumber: 1, title: '01차시 - 첫수업 마우스 연습', objective: '마우스 클릭, 드래그 & 캐릭터 기본 이동 조작법' },
           { lessonNumber: 2, title: '02차시 - 화면 구성하기', objective: '다양한 엔트리 오브젝트 배치 및 무대 배경 연출' },
@@ -43,7 +43,7 @@ export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
         schoolLocation: '솔빛초, 청계초 등 출강',
         detailDescription: '초등 2학년 학생들의 발달 단계에 맞춘 컴퓨팅 사고력(Computational Thinking) 중심 교육 과정입니다. 마우스 좌표 인식, 키보드 이벤트, 실시간 타이머, 조건 판단문, 변수 데이터 연산, 무작위 난수 및 동적 객체 복제본 알고리즘을 8가지 창의 프로젝트로 익힙니다. 게임을 직접 설계하고 오류를 해결(디버깅)하며 창의적 문제 해결 능력과 논리 구조화 역량을 기릅니다.',
         tags: ['엔트리활용', '컴퓨팅사고력', '8차시완성', '알고리즘', '창의융합'],
-        imageUrl: '/images/solbit-2-grade.jpg',
+        imageUrl: 'images/solbit-2-grade.jpg',
         lessonOutline: [
           { lessonNumber: 1, title: '01차시 - 숨은그림찾기 (좌표 & 클릭 이벤트)', objective: '마우스 X, Y 좌표 구조 이해 및 좌표 감지를 통한 데이터 매칭 알고리즘' },
           { lessonNumber: 2, title: '02차시 - 우주여행 (키보드 이벤트 & 방향 알고리즘)', objective: '키보드 방향키 입력 제어 및 가속도와 방향 전환을 활용한 오브젝트 이동' },
@@ -67,7 +67,7 @@ export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
         schoolLocation: '솔빛초등 및 주변 초교',
         detailDescription: '3D 딜라이텍스 플랫폼을 활용하여 시점 이동, 3D 지형 제작, 탐험 아일랜드 구축 및 메타버스 박물관을 만들어 가상 현실 발표회를 진행합니다.',
         tags: ['3D딜라이텍스', 'VR메타버스', '5차시완성', '공간지각력', '가상박물관'],
-        imageUrl: '/images/delight-3d.jpg',
+        imageUrl: 'images/delight-3d.jpg',
         lessonOutline: [
           { lessonNumber: 1, title: '1차시 - VR 소개 및 기본기', objective: 'VR 가상현실 이해, 3D 시점 이동, 카메라, 오브젝트 생성' },
           { lessonNumber: 2, title: '2차시 - 탐험 프로젝트 제작', objective: '3D 지형 디자인 및 다양한 탐험 요소(동물, 보물) 설치' },
@@ -87,13 +87,13 @@ export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
         targetGrade: '초등 1~2학년 / 전학년',
         detailDescription: '아바타 커스텀부터 나만의 맵 배경 제작, 음식 먹기 상호작용, 순간이동 포털 코딩 및 공개 맵 배포까지 메타버스 제작의 모든 것을 배웁니다.',
         tags: ['헬로메이플', '넥슨코딩', '5차시완성', '메타버스월드', '아바타'],
-        imageUrl: '/images/hello-maple.jpg',
+        imageUrl: 'images/hello-maple.jpg',
         lessonOutline: [
-          { lessonNumber: 1, title: '01차시 - 헬로메이플 로그인 & 아바타 꾸미기', objective: '나만의 아바타 만들기 (캐릭터 헤어·의상·액세서리 커스텀)', defaultImage: '/images/hellomaple_1.svg' },
-          { lessonNumber: 2, title: '02차시 - 화면구성 & 맵꾸미기', objective: '내 맘대로 만드는 메이플 월드 (에디터 구조 & 지형 타일 배치)', defaultImage: '/images/hellomaple_2.svg' },
-          { lessonNumber: 3, title: '03차시 - 오브젝트 상호작용 익히기', objective: '아바타와 음식의 상호작용 구현하기 (이펙트 & 스코어 상승)', defaultImage: '/images/hellomaple_3.svg' },
-          { lessonNumber: 4, title: '04차시 - 공간 이동 포털 마법 배우기', objective: '\'신호 보내기\'를 활용한 위치 이동 로직 구현하기', defaultImage: '/images/hellomaple_4.svg' },
-          { lessonNumber: 5, title: '05차시 - 새로운 월드로 떠나는 장면 전환 코딩', objective: '장면(Map) 추가 및 구성하기 (멀티 스테이지 메타버스 완성)', defaultImage: '/images/hellomaple_5.svg' }
+          { lessonNumber: 1, title: '01차시 - 헬로메이플 로그인 & 아바타 꾸미기', objective: '나만의 아바타 만들기 (캐릭터 헤어·의상·액세서리 커스텀)', defaultImage: 'images/hellomaple_1.svg' },
+          { lessonNumber: 2, title: '02차시 - 화면구성 & 맵꾸미기', objective: '내 맘대로 만드는 메이플 월드 (에디터 구조 & 지형 타일 배치)', defaultImage: 'images/hellomaple_2.svg' },
+          { lessonNumber: 3, title: '03차시 - 오브젝트 상호작용 익히기', objective: '아바타와 음식의 상호작용 구현하기 (이펙트 & 스코어 상승)', defaultImage: 'images/hellomaple_3.svg' },
+          { lessonNumber: 4, title: '04차시 - 공간 이동 포털 마법 배우기', objective: '\'신호 보내기\'를 활용한 위치 이동 로직 구현하기', defaultImage: 'images/hellomaple_4.svg' },
+          { lessonNumber: 5, title: '05차시 - 새로운 월드로 떠나는 장면 전환 코딩', objective: '장면(Map) 추가 및 구성하기 (멀티 스테이지 메타버스 완성)', defaultImage: 'images/hellomaple_5.svg' }
         ]
       },
       {
@@ -107,7 +107,7 @@ export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
         targetGrade: '초등 1~2학년',
         detailDescription: '아이들이 집중하고 즐거워하는 수업 모습과 기발한 학생 작품 사진을 확인하세요.',
         tags: ['수업현장', '활동사진', '생생갤러리', '초등1~2학년'],
-        imageUrl: '/images/museum (1).JPG'
+        imageUrl: 'images/museum (1).JPG'
       }
     ]
   },
@@ -128,7 +128,7 @@ export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
         targetGrade: '초등 3~4학년',
         detailDescription: '엔트리의 신호 보내기/받기, 변수와 조건문을 결합하여 점수 및 타이머가 작동하는 멋진 아케이드 게임, 슈팅 게임 및 인터랙티브 퀴즈를 완성하는 8차시 커리큘럼입니다.',
         tags: ['엔트리코딩', '8차시완성', '게임제작', '변수와조건문', '알고리즘', '초등3~4학년'],
-        imageUrl: '/images/entry-coding.jpg',
+        imageUrl: 'images/entry-coding.jpg',
         lessonOutline: [
           { lessonNumber: 1, title: '01차시 - 엔트리 기초 & 좌표 이해', objective: '오브젝트 배치, 이동 방향 및 X/Y 좌표 동작 코딩' },
           { lessonNumber: 2, title: '02차시 - 오브젝트 신호 인터랙션', objective: '신호 보내기/받기로 화면 전환 및 캐릭터 대화 연출' },
@@ -151,7 +151,7 @@ export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
         targetGrade: '초등 3~4학년',
         detailDescription: '웹캠으로 사물과 이미지 데이터를 직접 수집해 인공지능 모델을 훈련시키고, 얼굴 표정 감지 및 음성 명령 제어를 실습하는 8차시 알찬 인공지능 프로젝트입니다.',
         tags: ['4학년 AI 인공지능', '8차시완성', '머신러닝', '비전인식', '음성제어', '미래기술'],
-        imageUrl: '/images/ai-tech.jpg',
+        imageUrl: 'images/ai-tech.jpg',
         lessonOutline: [
           { lessonNumber: 1, title: '01차시 - 인공지능 첫만남', objective: '인공지능의 개념과 기본 원리, 우리 생활 속 AI 사례 탐구' },
           { lessonNumber: 2, title: '02차시 - 머신러닝 티처블 머신으로 동물상 테스트 만들기', objective: '이미지 데이터 수집 및 티처블 머신 학습으로 나만의 동물상 테스트 제작' },
@@ -188,7 +188,7 @@ export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
         targetGrade: '초등 3~4학년',
         detailDescription: '아이들이 집중하고 즐거워하는 수업 모습과 기발한 학생 작품 사진을 확인하세요.',
         tags: ['수업현장', '활동사진', '생생갤러리', '초등3~4학년'],
-        imageUrl: '/images/ar (1).jpg'
+        imageUrl: 'images/ar (1).jpg'
       }
     ]
   },
@@ -209,7 +209,7 @@ export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
         targetGrade: '초등 5~6학년',
         detailDescription: '피지컬 로봇 햄스터봇의 근접 센서, 라인 트레이싱 바닥 센서, LED 및 버저 소리를 제어하며 지능형 로봇 및 축구 경기 알고리즘을 만듭니다.',
         tags: ['햄스터봇', '로봇코딩', '자율주행', '라인트레이서', '피지컬SW'],
-        imageUrl: '/images/hamster-robot.jpg',
+        imageUrl: 'images/hamster-robot.jpg',
         lessonOutline: [
           { lessonNumber: 1, title: '햄스터 모터 & LED 제어', objective: '블루투스 통신 연결 및 바퀴와 LED 구동' },
           { lessonNumber: 2, title: '지능형 미로 탐험', objective: '근접 센서로 장애물을 감지해 자율 주행 회피' },
@@ -228,7 +228,7 @@ export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
         targetGrade: '초등 5~6학년',
         detailDescription: '전국 초등학교 6학년 실과 교과서에 채택된 네오봇 교구를 결합하여 청소 로봇, 자동 스마트 도어, 라인 주행 로봇 등 실공학적 기구를 구현합니다.',
         tags: ['네오봇', '실과교과서', '초6정규', '스마트로봇', '공학코딩'],
-        imageUrl: '/images/neobot-robot.jpg',
+        imageUrl: 'images/neobot-robot.jpg',
         lessonOutline: [
           { lessonNumber: 1, title: '네오봇 메커니즘과 연동', objective: 'CPU 블록, 서보모터 및 제어 시스템 연결' },
           { lessonNumber: 2, title: '스마트 리모컨 조종 로봇', objective: '스마트폰 블루투스 통신 기반 주행 모듈' },
@@ -247,7 +247,7 @@ export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
         targetGrade: '초등 5~6학년',
         detailDescription: '생성형 AI와 함께하는 미래발명품 기획·제작, 투닝(Tooning) 툴을 활용한 4컷 만화 속담툰 제작, 캔바(Canva) AI와 바이브코딩으로 만드는 나만의 웹서비스 구축 프로젝트입니다.',
         tags: ['AI리터러쉬', '미래발명품', '4컷속담툰', '투닝', '캔바바이브코딩'],
-        imageUrl: '/images/ai-literacy.jpg',
+        imageUrl: 'images/ai-literacy.jpg',
         lessonOutline: [
           { lessonNumber: 1, title: '01차시 - AI와 함께 하는 미래발명품 제작하기', objective: '생성형 AI 프롬프트와 아이디어 기획으로 미래 발명품 디자인 및 제작' },
           { lessonNumber: 2, title: '02차시 - AI와 함께 만드는 4컷 만화 속담 툰 투닝', objective: '투닝(Tooning) AI 만화 툴을 활용한 4컷 속담 웹툰 스토리보드 제작' },
@@ -265,7 +265,7 @@ export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
         targetGrade: '초등 5~6학년',
         detailDescription: '고학년 학생들이 개발한 AI 리터러쉬 앱, 로봇 시뮬레이터 및 실생활 문제 해결 인터랙티브 웹 애플리케이션 연결 서비스입니다.',
         tags: ['활동웹앱', '웹앱연결', '학생창작앱', '인터랙티브SW', '초등5~6학년'],
-        imageUrl: '/images/future (1).jpg',
+        imageUrl: 'images/future (1).jpg',
         fileDownloadUrl: ''
       },
       {
@@ -293,7 +293,7 @@ export const PORTFOLIO_CATEGORIES: PortfolioCategory[] = [
         targetGrade: '초등 5~6학년',
         detailDescription: '아이들이 집중하고 즐거워하는 수업 모습과 기발한 학생 작품 사진을 확인하세요.',
         tags: ['수업현장', '활동사진', '생생갤러리', '초등5~6학년'],
-        imageUrl: '/images/future (1).jpg'
+        imageUrl: 'images/future (1).jpg'
       }
     ]
   }

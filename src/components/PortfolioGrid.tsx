@@ -185,7 +185,7 @@ export const PortfolioGrid: React.FC<PortfolioGridProps> = ({ onSelectItem, onOp
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6.5">
           {filteredCategories.map((category) => {
             const firstItem = category.items[0];
-            const defaultStatic = category.key === 'grade12' ? '/grade12.jpg' : category.key === 'grade34' ? '/grade34.jpg' : category.key === 'grade56' ? '/grade56.jpg' : null;
+            const defaultStatic = category.key === 'grade12' ? 'grade12.jpg' : category.key === 'grade34' ? 'grade34.jpg' : category.key === 'grade56' ? 'grade56.jpg' : null;
             const categoryBannerImg = customCategoryImages[category.key] || defaultStatic || (firstItem ? (customMainImages[firstItem.id] || firstItem.imageUrl) : null);
 
             return (
@@ -217,12 +217,12 @@ export const PortfolioGrid: React.FC<PortfolioGridProps> = ({ onSelectItem, onOp
                         decoding="async"
                         onError={(e) => {
                           const target = e.currentTarget;
-                          if (target.src.includes('/grade12.jpg') && !target.src.includes('/images/')) {
-                            target.src = '/images/grade12.jpg';
-                          } else if (target.src.includes('/grade34.jpg') && !target.src.includes('/images/')) {
-                            target.src = '/images/grade34.jpg';
-                          } else if (target.src.includes('/grade56.jpg') && !target.src.includes('/images/')) {
-                            target.src = '/images/grade56.jpg';
+                          if (target.src.includes('grade12.jpg') && !target.src.includes('images/')) {
+                            target.src = 'images/grade12.jpg';
+                          } else if (target.src.includes('grade34.jpg') && !target.src.includes('images/')) {
+                            target.src = 'images/grade34.jpg';
+                          } else if (target.src.includes('grade56.jpg') && !target.src.includes('images/')) {
+                            target.src = 'images/grade56.jpg';
                           }
                         }}
                         className="w-full h-full object-cover"

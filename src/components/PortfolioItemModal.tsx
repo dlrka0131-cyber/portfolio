@@ -64,43 +64,43 @@ export interface GalleryPhotoItem {
 
 const DEFAULT_GALLERY_PHOTOS: Record<string, Array<{ id: string; url: string; title: string }>> = {
   'gallery-1': [
-    { id: 'm-1', url: '/images/museum (1).JPG', title: '메타버스 박물관 프로젝트 (1)' },
-    { id: 'm-2', url: '/images/museum (2).JPG', title: '메타버스 박물관 프로젝트 (2)' },
-    { id: 'm-3', url: '/images/museum (3).JPG', title: '메타버스 박물관 프로젝트 (3)' },
-    { id: 'm-4', url: '/images/museum (4).JPG', title: '메타버스 박물관 프로젝트 (4)' },
-    { id: 'm-5', url: '/images/museum (5).JPG', title: '메타버스 박물관 프로젝트 (5)' },
-    { id: 'm-6', url: '/images/museum (6).JPG', title: '메타버스 박물관 프로젝트 (6)' },
-    { id: 'm-7', url: '/images/museum (7).JPG', title: '메타버스 박물관 프로젝트 (7)' },
-    { id: 'm-8', url: '/images/museum (8).JPG', title: '메타버스 박물관 프로젝트 (8)' },
-    { id: 'm-9', url: '/images/museum (9).JPG', title: '메타버스 박물관 프로젝트 (9)' },
-    { id: 'm-10', url: '/images/museum (10).JPG', title: '메타버스 박물관 프로젝트 (10)' },
-    { id: 'm-11', url: '/images/museum (11).JPG', title: '메타버스 박물관 프로젝트 (11)' },
-    { id: 'm-12', url: '/images/museum (12).JPG', title: '메타버스 박물관 프로젝트 (12)' },
-    { id: 'm-13', url: '/images/museum (13).JPG', title: '메타버스 박물관 프로젝트 (13)' },
-    { id: 'm-14', url: '/images/museum (14).JPG', title: '메타버스 박물관 프로젝트 (14)' },
-    { id: 'm-15', url: '/images/museum (15).JPG', title: '메타버스 박물관 프로젝트 (15)' },
-    { id: 'm-16', url: '/images/museum (16).JPG', title: '메타버스 박물관 프로젝트 (16)' },
-    { id: 'm-17', url: '/images/museum (17).JPG', title: '메타버스 박물관 프로젝트 (17)' },
-    { id: 'm-18', url: '/images/museum (18).JPG', title: '메타버스 박물관 프로젝트 (18)' },
-    { id: 'm-19', url: '/images/museum (19).JPG', title: '메타버스 박물관 프로젝트 (19)' },
-    { id: 'm-20', url: '/images/museum (20).JPG', title: '메타버스 박물관 프로젝트 (20)' },
-    { id: 'm-21', url: '/images/museum (21).JPG', title: '메타버스 박물관 프로젝트 (21)' },
+    { id: 'm-1', url: 'images/museum (1).JPG', title: '메타버스 박물관 프로젝트 (1)' },
+    { id: 'm-2', url: 'images/museum (2).JPG', title: '메타버스 박물관 프로젝트 (2)' },
+    { id: 'm-3', url: 'images/museum (3).JPG', title: '메타버스 박물관 프로젝트 (3)' },
+    { id: 'm-4', url: 'images/museum (4).JPG', title: '메타버스 박물관 프로젝트 (4)' },
+    { id: 'm-5', url: 'images/museum (5).JPG', title: '메타버스 박물관 프로젝트 (5)' },
+    { id: 'm-6', url: 'images/museum (6).JPG', title: '메타버스 박물관 프로젝트 (6)' },
+    { id: 'm-7', url: 'images/museum (7).JPG', title: '메타버스 박물관 프로젝트 (7)' },
+    { id: 'm-8', url: 'images/museum (8).JPG', title: '메타버스 박물관 프로젝트 (8)' },
+    { id: 'm-9', url: 'images/museum (9).JPG', title: '메타버스 박물관 프로젝트 (9)' },
+    { id: 'm-10', url: 'images/museum (10).JPG', title: '메타버스 박물관 프로젝트 (10)' },
+    { id: 'm-11', url: 'images/museum (11).JPG', title: '메타버스 박물관 프로젝트 (11)' },
+    { id: 'm-12', url: 'images/museum (12).JPG', title: '메타버스 박물관 프로젝트 (12)' },
+    { id: 'm-13', url: 'images/museum (13).JPG', title: '메타버스 박물관 프로젝트 (13)' },
+    { id: 'm-14', url: 'images/museum (14).JPG', title: '메타버스 박물관 프로젝트 (14)' },
+    { id: 'm-15', url: 'images/museum (15).JPG', title: '메타버스 박물관 프로젝트 (15)' },
+    { id: 'm-16', url: 'images/museum (16).JPG', title: '메타버스 박물관 프로젝트 (16)' },
+    { id: 'm-17', url: 'images/museum (17).JPG', title: '메타버스 박물관 프로젝트 (17)' },
+    { id: 'm-18', url: 'images/museum (18).JPG', title: '메타버스 박물관 프로젝트 (18)' },
+    { id: 'm-19', url: 'images/museum (19).JPG', title: '메타버스 박물관 프로젝트 (19)' },
+    { id: 'm-20', url: 'images/museum (20).JPG', title: '메타버스 박물관 프로젝트 (20)' },
+    { id: 'm-21', url: 'images/museum (21).JPG', title: '메타버스 박물관 프로젝트 (21)' },
   ],
   'gallery-2': [
-    { id: 'ar-1', url: '/images/ar (1).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (1)' },
-    { id: 'ar-2', url: '/images/ar (2).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (2)' },
-    { id: 'ar-3', url: '/images/ar (3).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (3)' },
-    { id: 'ar-4', url: '/images/ar (4).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (4)' },
-    { id: 'ar-5', url: '/images/ar (5).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (5)' },
-    { id: 'ar-6', url: '/images/ar (6).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (6)' },
-    { id: 'ar-7', url: '/images/ar (7).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (7)' },
-    { id: 'ar-8', url: '/images/ar (8).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (8)' },
-    { id: 'ar-9', url: '/images/ar (9).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (9)' },
+    { id: 'ar-1', url: 'images/ar (1).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (1)' },
+    { id: 'ar-2', url: 'images/ar (2).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (2)' },
+    { id: 'ar-3', url: 'images/ar (3).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (3)' },
+    { id: 'ar-4', url: 'images/ar (4).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (4)' },
+    { id: 'ar-5', url: 'images/ar (5).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (5)' },
+    { id: 'ar-6', url: 'images/ar (6).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (6)' },
+    { id: 'ar-7', url: 'images/ar (7).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (7)' },
+    { id: 'ar-8', url: 'images/ar (8).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (8)' },
+    { id: 'ar-9', url: 'images/ar (9).jpg', title: 'AR 얼굴인식 & 인공지능 프로젝트 (9)' },
   ],
   'gallery-3': [
-    { id: 'future-1', url: '/images/future (1).jpg', title: 'AI 미래발명품 & 바이브코딩 (1)' },
-    { id: 'future-2', url: '/images/future (2).jpg', title: 'AI 미래발명품 & 바이브코딩 (2)' },
-    { id: 'future-3', url: '/images/future (3).jpg', title: 'AI 미래발명품 & 바이브코딩 (3)' },
+    { id: 'future-1', url: 'images/future (1).jpg', title: 'AI 미래발명품 & 바이브코딩 (1)' },
+    { id: 'future-2', url: 'images/future (2).jpg', title: 'AI 미래발명품 & 바이브코딩 (2)' },
+    { id: 'future-3', url: 'images/future (3).jpg', title: 'AI 미래발명품 & 바이브코딩 (3)' },
   ],
   'padlet-34': [
     { id: 'p34-1', url: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80', title: '초등 3~4학년 패들렛 과제 공유 게시판' },
@@ -109,9 +109,9 @@ const DEFAULT_GALLERY_PHOTOS: Record<string, Array<{ id: string; url: string; ti
     { id: 'p34-4', url: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80', title: 'AI 머신러닝 학습 과제 제출물' },
   ],
   'webapp-56': [
-    { id: 'future-w-1', url: '/images/future (1).jpg', title: 'AI 미래발명품 & 바이브코딩 웹앱 (1)' },
-    { id: 'future-w-2', url: '/images/future (2).jpg', title: 'AI 미래발명품 & 바이브코딩 웹앱 (2)' },
-    { id: 'future-w-3', url: '/images/future (3).jpg', title: 'AI 미래발명품 & 바이브코딩 웹앱 (3)' },
+    { id: 'future-w-1', url: 'images/future (1).jpg', title: 'AI 미래발명품 & 바이브코딩 웹앱 (1)' },
+    { id: 'future-w-2', url: 'images/future (2).jpg', title: 'AI 미래발명품 & 바이브코딩 웹앱 (2)' },
+    { id: 'future-w-3', url: 'images/future (3).jpg', title: 'AI 미래발명품 & 바이브코딩 웹앱 (3)' },
   ],
 };
 
@@ -363,7 +363,7 @@ export const PortfolioItemModal: React.FC<PortfolioItemModalProps> = ({ item, on
             const savedSess =
               (await getItemWithFallback(customImgKey)) ||
               outline.defaultImage ||
-              (item.id === 'hello-maple' ? `/images/hellomaple_${outline.lessonNumber}.svg` : '');
+              (item.id === 'hello-maple' ? `images/hellomaple_${outline.lessonNumber}.svg` : '');
             if (savedSess) {
               sessMap[outline.lessonNumber] = savedSess;
             }
