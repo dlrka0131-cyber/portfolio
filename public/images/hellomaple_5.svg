@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBF8FF"/>
+      <stop offset="50%" stop-color="#EDF2F7"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <filter id="shadow5" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#3182CE" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="540" rx="32" fill="url(#bg5)"/>
+
+  <!-- World Map Icon Doodle -->
+  <rect x="720" y="80" width="160" height="110" rx="12" fill="#FEFCBF" stroke="#D69E2E" stroke-width="4"/>
+  <path d="M740 100 L780 140 L820 110 L860 150" stroke="#3182CE" stroke-width="4" stroke-dasharray="6,6" fill="none"/>
+
+  <!-- Main Illustration Group -->
+  <g transform="translate(480, 220)" filter="url(#shadow5)">
+    <!-- White Giant Character -->
+    <path d="M-80 -80 C-80 -140, 80 -140, 80 -80 C100 20, 90 60, 70 80 C0 100, -70 80, -80 -80 Z" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="6"/>
+    <!-- Pinkbean Body -->
+    <path d="M-90 40 C-90 -50, 90 -50, 90 40 C100 110, -100 110, -90 40 Z" fill="#FFB6C1" stroke="#FF69B4" stroke-width="7"/>
+    <!-- Portal Ring -->
+    <ellipse cx="0" cy="80" rx="100" ry="25" fill="none" stroke="#3182CE" stroke-width="6"/>
+    <!-- Eyes -->
+    <ellipse cx="-30" cy="10" rx="8" ry="12" fill="#2D3748"/>
+    <ellipse cx="30" cy="10" rx="8" ry="12" fill="#2D3748"/>
+  </g>
+
+  <!-- Main Title Banner -->
+  <g transform="translate(480, 390)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Pretendard', 'Noto Sans KR', sans-serif" font-weight="900" font-size="42" fill="#2B6CB0" letter-spacing="-1">
+      새로운 월드로 떠나는 장면 전환 코딩
+    </text>
+  </g>
+
+  <!-- Subtitle Pill Capsule -->
+  <g transform="translate(480, 455)">
+    <rect x="-190" y="-24" width="380" height="48" rx="24" fill="#FFFFFF" stroke="#3182CE" stroke-width="3" filter="url(#shadow5)"/>
+    <text x="0" y="7" text-anchor="middle" font-family="'Pretendard', 'Noto Sans KR', sans-serif" font-weight="800" font-size="20" fill="#2C5282">
+      [5차시] 장면(Map) 추가 및 구성하기
+    </text>
+  </g>
+
+  <text x="480" y="505" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="14" fill="#A0AEC0">
+    HelloMaple Creation Class
+  </text>
+</svg>

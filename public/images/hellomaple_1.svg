@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBFBFF"/>
+      <stop offset="50%" stop-color="#FFF0F5"/>
+      <stop offset="100%" stop-color="#FFF5E6"/>
+    </linearGradient>
+    <filter id="shadow1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#E88A8A" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="960" height="540" rx="32" fill="url(#bg1)"/>
+
+  <!-- Decorative Cute Background Blobs & Icons -->
+  <circle cx="150" cy="120" r="18" fill="#FFD1DC" opacity="0.6"/>
+  <circle cx="820" cy="140" r="24" fill="#BEE3F8" opacity="0.6"/>
+  <circle cx="880" cy="420" r="16" fill="#FEEBC8" opacity="0.7"/>
+
+  <!-- Key / Lock / Crown Vector Doodles -->
+  <path d="M120 380 Q110 340 130 320 Q150 300 170 330 Q160 370 120 380 Z" fill="#FFE4E6" stroke="#FF99A8" stroke-width="4"/>
+  <path d="M820 220 L840 200 L860 220 L880 190 L890 240 Z" fill="#FEFCBF" stroke="#ECC94B" stroke-width="4"/>
+
+  <!-- Center Pink Character & Friends Illustration Vector -->
+  <g transform="translate(480, 220)" filter="url(#shadow1)">
+    <!-- Background White Giant Character -->
+    <path d="M-80 -80 C-80 -140, 80 -140, 80 -80 C100 20, 90 60, 70 80 C0 100, -70 80, -80 -80 Z" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="6"/>
+    <!-- Yellow Mushroom -->
+    <path d="M-190 -10 C-190 -70, -110 -70, -110 -10 Q-150 10 -190 -10 Z" fill="#FBD38D" stroke="#DD6B20" stroke-width="5"/>
+    <!-- Main Pinkbean Body -->
+    <path d="M-90 40 C-90 -50, 90 -50, 90 40 C100 110, -100 110, -90 40 Z" fill="#FFB6C1" stroke="#FF69B4" stroke-width="7"/>
+    <!-- Ears -->
+    <path d="M-70 -30 L-95 -80 L-40 -45 Z" fill="#9370DB" stroke="#4B0082" stroke-width="4"/>
+    <path d="M70 -30 L95 -80 L40 -45 Z" fill="#9370DB" stroke="#4B0082" stroke-width="4"/>
+    <!-- Eyes & Wink -->
+    <ellipse cx="-30" cy="10" rx="8" ry="12" fill="#2D3748"/>
+    <path d="M20 10 Q35 0 40 15" stroke="#2D3748" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <!-- Mouth -->
+    <path d="M-10 25 Q5 45 20 25 Z" fill="#E53E3E"/>
+  </g>
+
+  <!-- Main Title Banner -->
+  <g transform="translate(480, 390)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Pretendard', 'Noto Sans KR', sans-serif" font-weight="900" font-size="44" fill="#FF5A4D" letter-spacing="-1">
+      헬로메이플 로그인 &amp; 아바타 꾸미기
+    </text>
+  </g>
+
+  <!-- Subtitle Pill Capsule -->
+  <g transform="translate(480, 455)">
+    <rect x="-180" y="-24" width="360" height="48" rx="24" fill="#FFFFFF" stroke="#FBD38D" stroke-width="3" filter="url(#shadow1)"/>
+    <text x="0" y="7" text-anchor="middle" font-family="'Pretendard', 'Noto Sans KR', sans-serif" font-weight="800" font-size="20" fill="#4A3E39">
+      [1차시] 나만의 아바타 만들기
+    </text>
+  </g>
+
+  <!-- Bottom Brand Caption -->
+  <text x="480" y="505" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="14" fill="#A0AEC0">
+    HelloMaple Creation Class
+  </text>
+</svg>

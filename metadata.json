@@ -1,0 +1,6 @@
+{
+  "name": "슬기로운 코딩교육 - 김정이 강사 포트폴리오",
+  "description": "김정이 코딩 교육 전문가의 '슬기로운 코딩교육' 포트폴리오. 초·중·고 대상 엔트리, AI, 햄스터봇, AR/VR, 네오봇, 경기 꿈의학교 지도안 및 학생 작품, 수업 자료",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

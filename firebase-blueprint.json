@@ -1,0 +1,23 @@
+{
+  "entities": {
+    "app_storage": {
+      "title": "App Storage Item",
+      "description": "Stores shared application state, uploaded images, and inquiries for global access",
+      "properties": {
+        "key": {
+          "type": "string",
+          "description": "Key identifier for the item"
+        },
+        "value": {
+          "type": "string",
+          "description": "Data value or compressed base64 image string"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "ISO timestamp of last update"
+        }
+      },
+      "required": ["key", "value"]
+    }
+  }
+}
