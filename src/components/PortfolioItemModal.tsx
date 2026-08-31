@@ -293,6 +293,31 @@ export const PortfolioItemModal: React.FC<PortfolioItemModalProps> = ({ item, on
     onClose();
   };
 
+  // Show the item's default main image the instant the modal opens,
+  // synchronously and with no network wait. The effect below upgrades it to
+  // an admin-uploaded custom photo once that resolves.
+  useEffect(() => {
+    if (!item) return;
+    setMainImgUrl(item.imageUrl || '');
+  }, [item]);
+
+  // Show each session's default/static image the instant the modal opens,
+  // synchronously and with no network wait. The effect below upgrades any
+  // entry with an admin-uploaded custom photo once that resolves.
+  useEffect(() => {
+    if (!item || !item.lessonOutline) return;
+    const defaultMap: Record<number, string> = {};
+    for (const outline of item.lessonOutline) {
+      const defaultImg =
+        outline.defaultImage ||
+        (item.id === 'hello-maple' ? `images/hellomaple_${outline.lessonNumber}.svg` : '');
+      if (defaultImg) {
+        defaultMap[outline.lessonNumber] = defaultImg;
+      }
+    }
+    setSessionImages(defaultMap);
+  }, [item]);
+
   useEffect(() => {
     if (!item) return;
     const loadImages = async () => {
@@ -355,20 +380,27 @@ export const PortfolioItemModal: React.FC<PortfolioItemModalProps> = ({ item, on
         const savedMain = await getItem(`main_img_${item.id}`);
         setMainImgUrl(savedMain || item.imageUrl || '');
 
-        // Load lesson outline session images
+        // Look up any admin-uploaded custom session photo to upgrade the
+        // defaults with. Runs in parallel (not one-by-one) so a curriculum
+        // with no uploaded photos doesn't stall behind serial Firestore round trips.
         if (item.lessonOutline) {
-          const sessMap: Record<number, string> = {};
-          for (const outline of item.lessonOutline) {
-            const customImgKey = `session_img_${item.id}_sess${outline.lessonNumber}`;
-            const savedSess =
-              (await getItemWithFallback(customImgKey)) ||
-              outline.defaultImage ||
-              (item.id === 'hello-maple' ? `images/hellomaple_${outline.lessonNumber}.svg` : '');
-            if (savedSess) {
-              sessMap[outline.lessonNumber] = savedSess;
-            }
+          const results = await Promise.all(
+            item.lessonOutline.map(async (outline) => ({
+              lessonNumber: outline.lessonNumber,
+              val: await getItemWithFallback(`session_img_${item.id}_sess${outline.lessonNumber}`),
+            }))
+          );
+
+          const customUpdates = results.filter((r) => r.val);
+          if (customUpdates.length > 0) {
+            setSessionImages((prev) => {
+              const updated = { ...prev };
+              for (const r of customUpdates) {
+                updated[r.lessonNumber] = r.val as string;
+              }
+              return updated;
+            });
           }
-          setSessionImages(sessMap);
         }
       }
     };
@@ -1023,6 +1055,8 @@ export const PortfolioItemModal: React.FC<PortfolioItemModalProps> = ({ item, on
                         <img
                           src={photo.url}
                           alt={photo.title}
+                          loading="lazy"
+                          decoding="async"
                           referrerPolicy="no-referrer"
                           onError={(e) => {
                             const target = e.currentTarget;
@@ -1207,6 +1241,8 @@ export const PortfolioItemModal: React.FC<PortfolioItemModalProps> = ({ item, on
                             <img
                               src={photo.url}
                               alt={photo.title}
+                              loading="lazy"
+                              decoding="async"
                               referrerPolicy="no-referrer"
                               className="w-full h-full object-cover"
                             />
@@ -1613,7 +1649,7 @@ export const PortfolioItemModal: React.FC<PortfolioItemModalProps> = ({ item, on
                     : 'border-stone-700 opacity-50 hover:opacity-100'
                 }`}
               >
-                <img src={photo.url} alt={photo.title} className="w-full h-full object-cover" />
+                <img src={photo.url} alt={photo.title} loading="lazy" decoding="async" className="w-full h-full object-cover" />
                 <div className="absolute top-1 left-1 bg-black/70 text-white font-black text-[10px] px-1.5 rounded">
                   {idx + 1}
                 </div>
